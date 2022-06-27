@@ -29,9 +29,9 @@
 		DBDC67BE21B88B0F000CF22C /* AddingMentionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DB5DC1EA17EB8004CBD91 /* AddingMentionsTests.swift */; };
 		DBDC67C121B8B0F0000CF22C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDC67C021B8B0F0000CF22C /* Helper.swift */; };
 		DBE8B4A31C657F200090EF32 /* MentionsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE8B49D1C657F200090EF32 /* MentionsArray.swift */; };
-		DBE8B4A41C657F200090EF32 /* AttributeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE8B49E1C657F200090EF32 /* AttributeContainer.swift */; };
+		DBE8B4A41C657F200090EF32 /* AttributeContainerMention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE8B49E1C657F200090EF32 /* AttributeContainerMention.swift */; };
 		DBE8B4A61C657F200090EF32 /* MentionListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE8B4A01C657F200090EF32 /* MentionListener.swift */; };
-		DBE8B4B41C6580360090EF32 /* AttributeContainer.swift in Headers */ = {isa = PBXBuildFile; fileRef = DBE8B49E1C657F200090EF32 /* AttributeContainer.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBE8B4B41C6580360090EF32 /* AttributeContainerMention.swift in Headers */ = {isa = PBXBuildFile; fileRef = DBE8B49E1C657F200090EF32 /* AttributeContainerMention.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBE8B4B61C6580360090EF32 /* MentionListener.swift in Headers */ = {isa = PBXBuildFile; fileRef = DBE8B4A01C657F200090EF32 /* MentionListener.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBF2DF611C4B1067001B9788 /* SZMentionsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0403BD1C44A017000904DB /* SZMentionsSwift.framework */; };
 /* End PBXBuildFile section */
@@ -75,7 +75,7 @@
 		DBC779F21FDB6161006CD115 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		DBDC67C021B8B0F0000CF22C /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		DBE8B49D1C657F200090EF32 /* MentionsArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionsArray.swift; sourceTree = "<group>"; };
-		DBE8B49E1C657F200090EF32 /* AttributeContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributeContainer.swift; sourceTree = "<group>"; };
+		DBE8B49E1C657F200090EF32 /* AttributeContainerMention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributeContainerMention.swift; sourceTree = "<group>"; };
 		DBE8B4A01C657F200090EF32 /* MentionListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionListener.swift; sourceTree = "<group>"; };
 		DBF2DF5C1C4B1067001B9788 /* SZMentionsSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SZMentionsSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF2DF601C4B1067001B9788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		DBE8B4991C657F200090EF32 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DBE8B49E1C657F200090EF32 /* AttributeContainer.swift */,
+				DBE8B49E1C657F200090EF32 /* AttributeContainerMention.swift */,
 				DB1DF4BA1F74A66700EA8E63 /* CreateMention.swift */,
 				DBE8B49A1C657F200090EF32 /* Internal */,
 				DB1DF4B41F74A3D200EA8E63 /* Mention.swift */,
@@ -201,7 +201,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBE8B4B41C6580360090EF32 /* AttributeContainer.swift in Headers */,
+				DBE8B4B41C6580360090EF32 /* AttributeContainerMention.swift in Headers */,
 				DB632EA822466338009CF525 /* CreateMention.swift in Headers */,
 				DB632EA72246632F009CF525 /* Mention.swift in Headers */,
 				DBE8B4B61C6580360090EF32 /* MentionListener.swift in Headers */,
@@ -355,7 +355,7 @@
 				DB6C1C1321B7140100C178AC /* NSRange.swift in Sources */,
 				DB1DF4B31F74A2AD00EA8E63 /* Attribute.swift in Sources */,
 				DB2330171E24832D00242C33 /* Verifier.swift in Sources */,
-				DBE8B4A41C657F200090EF32 /* AttributeContainer.swift in Sources */,
+				DBE8B4A41C657F200090EF32 /* AttributeContainerMention.swift in Sources */,
 				DB1940B321B9BAC300CE2EDE /* Operators.swift in Sources */,
 				DB1DF4BB1F74A66700EA8E63 /* CreateMention.swift in Sources */,
 				DB6C1C1121B6BBE500C178AC /* NSAttributedString.swift in Sources */,

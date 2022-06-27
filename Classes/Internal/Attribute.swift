@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal struct Attribute: AttributeContainer {
+internal struct Attribute: AttributeContainerMention {
     /**
      @brief Name of the attribute to set on a string
      */

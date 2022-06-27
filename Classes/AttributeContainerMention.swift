@@ -1,5 +1,5 @@
 //
-//  AttributeContainer.swift
+//  AttributeContainerMention.swift
 //  SZMentionsSwift
 //
 //  Created by Steven Zweier on 1/11/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol AttributeContainer {
+public protocol AttributeContainerMention {
     /**
      @brief Name of the attribute to set on a string
      */
@@ -20,7 +20,7 @@ public protocol AttributeContainer {
     var value: Any { get }
 }
 
-internal extension Array where Element == AttributeContainer {
+internal extension Array where Element == AttributeContainerMention {
     var dictionary: [NSAttributedString.Key: Any] {
         return Dictionary(uniqueKeysWithValues: compactMap { ($0.name, $0.value) })
     }
